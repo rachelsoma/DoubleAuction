@@ -1,26 +1,19 @@
 #include<iostream>
 #include<string>
-#include "bid.h"
+#include "Bid.h"
 #include "Trader.h"
+#include "Trader.cpp"
 
 using namespace std;
 
-int main(){
+int main() {
 
-//bid a("Dongmo", 4, 'A', 21);
-//bid b("Jane", 26, 'B', 35);
+  for (int i=0; i<10; i++) {
+    Seller w("Unknown");
+    w.print();
+    Buyer z("Unknown");
+    z.print();
+  }
 
-//a.print();
-//b.print();
-
-Seller dongmo("Dongmo");
-Buyer jane("Jane");
-Seller rach("rach");
-
-
-dongmo.print();
-jane.print();
-rach.print();
-
-return 0;
+  return 0;
 }

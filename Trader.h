@@ -17,8 +17,8 @@ public:
   static int bidId;
 
   /** Default constructor */
-  Trader(){id++;}
-  Trader(string inTrader){traderName=inTrader;id++;}
+  Trader() {id++;}
+  Trader(string inTrader) {traderName=inTrader; id++;}
   Trader(string inTrader, char inType) {
     traderName=inTrader;
     traderType=inType;
@@ -26,37 +26,31 @@ public:
     id++;
   }
 
-  void print();
+  virtual void print();
 //    virtual ~Trader();
-  double generateBid();
 
-//protected:
+protected:
 };
 
 int Trader::id = 0;
 int Trader::bidId = 0;
 
-void Trader::print() {
-  cout << traderId <<  " is a " << traderType << endl;
-}
-
-
 class Buyer : public Trader {
 public:
 
-
   /** Default constructor */
+  Buyer();
   Buyer(string inTrader) {
     traderName=inTrader;
     traderType='b';
     traderId = id;
-    id++;
+
   }
 
   /** Default destructor */
-  virtual ~Buyer() {}
+  virtual ~Buyer() {};
 
-void print();
+  void print();
 
 private:
   string traderName;
@@ -66,15 +60,9 @@ private:
   char bidType = 'B'; //!< Member variable "bidType"
 };
 
-void Buyer::print() {
-  cout <<"Buyer ID: "<< traderId <<  " is a " << traderType << endl;
-};
-
 /** New child class for Sellers */
 
 class Seller : public Trader {
-
-
 
 public:
   /** Default constructor */
@@ -82,13 +70,13 @@ public:
     traderName=inTrader;
     traderType='s';
     traderId = id;
-    id++;
+
   }
 
   /** Default destructor */
   virtual ~Seller() {}
 
-void print();
+  void print();
 
 private:
   string traderName;
@@ -97,9 +85,5 @@ private:
 
   char bidType = 'B';
 };
-
-void Seller::print() {
-  cout <<"Seller ID: "<< traderId <<  " Name:" << traderName <<" " << traderType << endl;
-}
 
 #endif // TRADER_H

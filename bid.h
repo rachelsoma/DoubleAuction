@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class bid {
+class Bid {
 private:
   string traderName;
   int bidId;
@@ -17,7 +17,7 @@ private:
 
 
 public:
-  bid (string inName, int id, char inType, int inQty) {//constructor
+  Bid (string inName, int id, char inType, int inQty) {//constructor
     generateBid();
     traderName=inName;
     bidId=id;
@@ -31,11 +31,11 @@ public:
 protected:
 };
 
-void bid::print() {
+void Bid::print() {
   cout << traderName << " " << bidId << " " << bidType << " " << price << endl;
-};
+}
 
-double bid::generateBid() {
+double Bid::generateBid() {
   double const MINPRICE = 1;
   double const MAXPRICE = 99.99;
 //int const QUANTITY = 1;
@@ -43,5 +43,5 @@ double bid::generateBid() {
   randBid = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
 
   return randBid;
-};
+}
 #endif // BID_H
