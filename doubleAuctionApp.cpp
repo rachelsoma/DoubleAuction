@@ -7,18 +7,20 @@ using namespace std;
 
 int main(){
 
-bid a("Dongmo", 4, 'A', 21);
-bid b("Jane", 26, 'B', 35);
+//bid a("Dongmo", 4, 'A', 21);
+//bid b("Jane", 26, 'B', 35);
 
-a.print();
-b.print();
+//a.print();
+//b.print();
 
-Trader d("Dongmo", 's');
-Buyer j("Jane");
-Buyer("Jane");
+Seller dongmo("Dongmo");
+Buyer jane("Jane");
+Seller rach("rach");
 
-d.Print();
-j.Print();
+
+dongmo.print();
+jane.print();
+rach.print();
 
 return 0;
 }
