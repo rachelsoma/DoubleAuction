@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1475672031 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\doubleauctionapp.cpp
+	<iostream>
+	<string>
+	"bid.h"
+	"Trader.h"
+
+1475724603 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\bid.h
+	<iostream>
+	<string>
+	<cstdlib>
+	<ctime>
+
+1475724626 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.h
+	<string>
+
