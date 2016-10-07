@@ -4,9 +4,18 @@ void Buyer::print() {
 };
 
 void Seller::print() {
-  cout <<"Seller ID: "<< traderId <<  " Name: " << traderName <<" " << traderType << endl;
+  cout <<"Seller ID: "<< traderId <<  " Name: " << traderName <<"is a  " << traderType << endl;
 };
 
-void Trader::print() {
-  cout <<"Trader ID: " << traderId << "Name: " << traderName << " is a " << traderType << endl;
+Bid generateBid() {
+  double const MINPRICE = 20;
+  double const MAXPRICE = 100;
+  int const QUANTITY = 1;
+
+  char bidType = 'a'; //a for asking
+
+  double price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
+
+  cout << bidType <<": Bid generateBid made offer of "<< QUANTITY << " at " << price << endl;
+return Bid();
 };

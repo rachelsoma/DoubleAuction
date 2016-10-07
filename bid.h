@@ -9,9 +9,6 @@ using namespace std;
 
 class Bid {
 private:
-  string traderName;
-  int bidId;
-  char bidType;
   double price;
   int quantity;
 
@@ -19,26 +16,28 @@ private:
 public:
 
  Bid () {//constructor
-    generateBid();
-    price=randBid;
+   double const MINPRICE = 20;
+  double const MAXPRICE = 100;
+//int const QUANTITY = 1;
+
+  price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
     quantity=1;
   }
-  void print();
+  void printBid();
   double generateBid();
-  double randBid;
 protected:
 };
 
-void Bid::print() {
+void Bid::printBid() {
+  cout << "Bid is " << price <<endl;
 }
 
 double Bid::generateBid() {
-  double const MINPRICE = 1;
-  double const MAXPRICE = 99.99;
+  double const MINPRICE = 20;
+  double const MAXPRICE = 100;
 //int const QUANTITY = 1;
 
-  randBid = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
-
-  return randBid;
+  price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
+  return price;
 }
 #endif // BID_H

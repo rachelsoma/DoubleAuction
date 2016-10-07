@@ -9,9 +9,11 @@ using namespace std;
 int main() {
 
   for (int i=0; i<2; i++) {
-    Seller w("Unknown");
+    Seller w;
     w.print();
-    Buyer z();
+    generateBid();
+
+    Buyer z;
     z.print();
   }
 
