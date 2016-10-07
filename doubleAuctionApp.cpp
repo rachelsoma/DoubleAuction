@@ -12,6 +12,7 @@ int main() {
     Seller w;
     w.print();
     generateBid();
+    //w.printBid();
 
     Buyer z;
     z.print();

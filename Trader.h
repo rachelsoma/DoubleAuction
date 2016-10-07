@@ -28,7 +28,7 @@ public:
   }
 
   void print();
-
+  Bid generateBid();
 
 
 //    virtual ~Trader();
@@ -94,12 +94,14 @@ public:
   virtual ~Seller() {}
 
   void print();
-  Bid generateBid();
+
+  void printBid();
 
 private:
   string traderName;
   char traderType;
   int traderId;
+  char bidType;
 
 };
 
