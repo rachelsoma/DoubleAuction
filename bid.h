@@ -17,7 +17,8 @@ private:
 
 
 public:
-  Bid (string inName, int id, char inType, int inQty) {//constructor
+
+ Bid (string inName, int id, char inType, int inQty) {//constructor
     generateBid();
     traderName=inName;
     bidId=id;

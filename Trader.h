@@ -53,23 +53,17 @@ public:
   void print();
 
 private:
-  string traderName;
-  char traderType;
-  int traderId;
-
-  char bidType = 'B'; //!< Member variable "bidType"
 };
 
 /** New child class for Sellers */
 
-class Seller : public Trader {
+class Seller : private Trader {
 
 public:
   /** Default constructor */
   Seller(string inTrader) {
-    traderName=inTrader;
+
     traderType='s';
-    traderId = id;
 
   }
 
