@@ -11,7 +11,7 @@ int main() {
   for (int i=0; i<2; i++) {
     Seller w("Unknown");
     w.print();
-    Buyer z("Unknown");
+    Buyer z();
     z.print();
   }
 

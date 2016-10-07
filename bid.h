@@ -18,13 +18,10 @@ private:
 
 public:
 
- Bid (string inName, int id, char inType, int inQty) {//constructor
+ Bid () {//constructor
     generateBid();
-    traderName=inName;
-    bidId=id;
-    bidType=inType;
     price=randBid;
-    quantity;
+    quantity=1;
   }
   void print();
   double generateBid();
@@ -33,7 +30,6 @@ protected:
 };
 
 void Bid::print() {
-  cout << traderName << " " << bidId << " " << bidType << " " << price << endl;
 }
 
 double Bid::generateBid() {

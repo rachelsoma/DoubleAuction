@@ -8,7 +8,6 @@ using namespace std;
 class Trader {
 private:
   string traderName;
-  char traderType;
   int traderId;
 
 public:
@@ -17,16 +16,18 @@ public:
   static int bidId;
 
   /** Default constructor */
-  Trader() {id++;}
-  Trader(string inTrader) {traderName=inTrader; id++;}
-  Trader(string inTrader, char inType) {
-    traderName=inTrader;
-    traderType=inType;
+  Trader() {
+    traderName="Unknown";
     traderId = id;
-    id++;
-  }
+    id++;}
+    /** Name only constructor */
+  Trader(string inTrader) {
+  traderName=inTrader;
+  traderId = id;
+  id++;}
 
   virtual void print();
+
 //    virtual ~Trader();
 
 protected:
@@ -35,17 +36,27 @@ protected:
 int Trader::id = 0;
 int Trader::bidId = 0;
 
+
+/**
+ * Buyer class
+ */
+
 class Buyer : public Trader {
 public:
 
   /** Default constructor */
-  Buyer();
-  Buyer(string inTrader) {
-    traderName=inTrader;
+  Buyer() {
+    traderName="Unknown";
     traderType='b';
     traderId = id;
-
+    id++;
   }
+  /** Name only constructor */
+  Buyer (string inTrader) {
+  traderName=inTrader;
+  traderType='b';
+  traderId = id;
+  id++;}
 
   /** Default destructor */
   virtual ~Buyer() {};
@@ -55,17 +66,26 @@ public:
 private:
 };
 
-/** New child class for Sellers */
+/**
+ * New child class for Sellers
+ */
 
 class Seller : private Trader {
 
 public:
   /** Default constructor */
-  Seller(string inTrader) {
-
+  Seller() {
+    traderName="Unknown";
     traderType='s';
-
+    traderId = id;
+    id++;
   }
+  /** Name only constructor */
+  Seller (string inTrader) {
+  traderName=inTrader;
+  traderType='s';
+  traderId = id;
+  id++;}
 
   /** Default destructor */
   virtual ~Seller() {}

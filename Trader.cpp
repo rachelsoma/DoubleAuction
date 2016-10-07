@@ -1,3 +1,4 @@
+
 void Buyer::print() {
   cout <<"Buyer ID: "<< traderId <<  " Name: " << traderName <<" is a " << traderType << endl;
 };
