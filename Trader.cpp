@@ -12,17 +12,20 @@ Bid generateBid() {
   double const MAXPRICE = 100;
   int const QUANTITY = 1;
   int quantity = QUANTITY;
-  char bidType = 'a'; //a for asking
+
 
   double price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
+  price = floor(price*100+0.5)/100;
 
-
-cout << bidType <<". "<< price << ". "<< quantity << ". " <<endl;
+cout << "generating bid\n";
 
 return Bid();
 };
 
-void Seller::printBid(){
+void Buyer::placeBid(){
+generateBid();
+bidType = 'a'; //a for asking
 
+cout << bidType <<". "<< price << ". "<< quantity << ". " <<endl;
 
 };

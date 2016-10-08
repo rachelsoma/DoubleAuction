@@ -1,6 +1,7 @@
 #ifndef TRADER_H
 #define TRADER_H
 #include<string>
+#include<cmath>
 
 
 using namespace std;
@@ -65,9 +66,11 @@ public:
   virtual ~Buyer() {};
 
   void print();
+  void placeBid();
 
 private:
   char traderType;
+  char bidType;
 };
 
 /**
@@ -91,7 +94,7 @@ public:
   }
 
   /** Default destructor */
-  virtual ~Seller() {}
+  virtual ~Seller() {};
 
   void print();
 
