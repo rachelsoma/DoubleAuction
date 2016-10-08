@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1475903472 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\doubleauctionapp.cpp
+1475905615 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\doubleauctionapp.cpp
 	<iostream>
 	<string>
 	"Bid.h"
@@ -12,9 +12,9 @@
 	<cstdlib>
 	<ctime>
 
-1475902721 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.h
+1475905395 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.h
 	<string>
 	<cmath>
 
-1475903476 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.cpp
+1475905649 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.cpp
 

@@ -8,15 +8,16 @@ using namespace std;
 
 int main() {
 
-  for (int i=0; i<2; i++) {
-    Buyer w;
-    w.print();
-    generateBid();
-    //w.printBid();
 
-
+  Buyer w("Joe");
+  for (int i=0; i<10; i++) {
+    w.generateBid();
   }
-
+  //w.printBid();
+  Seller q("Jane");
+  for (int i=0; i<10; i++) {
+    q.generateBid();
+  }
 
 
   return 0;

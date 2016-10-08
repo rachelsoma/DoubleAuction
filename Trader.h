@@ -67,6 +67,7 @@ public:
 
   void print();
   void placeBid();
+  Bid generateBid();
 
 private:
   char traderType;
@@ -98,7 +99,7 @@ public:
 
   void print();
 
-  void placeBid();
+  Bid generateBid();
 
 private:
   string traderName;
