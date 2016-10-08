@@ -42,7 +42,7 @@ Bid Buyer::generateBid(){
 bidId++;
 
 
-cout << traderName << traderId << traderType << " wants to buy " << bidId <<" - " << quantity << " at "<< price <<endl;
+cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to buy " " - " << quantity << " at "<< price <<endl;
 return Bid();
 };
 
@@ -63,6 +63,6 @@ Bid Seller::generateBid(){
 bidId++;
 
 
-cout << traderName << traderId << traderType << " wants to sell " << bidId <<" for " << quantity << " at "<< price <<endl;
+cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to sell " " - " << quantity << " at "<< price <<endl;
 return Bid();
 };

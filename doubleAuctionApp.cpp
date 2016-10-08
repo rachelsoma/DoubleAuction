@@ -10,13 +10,21 @@ int main() {
 
 
   Buyer w("Joe");
-  for (int i=0; i<10; i++) {
+  for (int i=0; i<5; i++) {
     w.generateBid();
+  }
+    Buyer s("Sue");
+  for (int i=0; i<5; i++) {
+    s.generateBid();
   }
   //w.printBid();
   Seller q("Jane");
-  for (int i=0; i<10; i++) {
+  for (int i=0; i<5; i++) {
     q.generateBid();
+  }
+   Seller d("Dan");
+  for (int i=0; i<5; i++) {
+    d.generateBid();
   }
 
 
