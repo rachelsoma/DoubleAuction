@@ -10,7 +10,7 @@ class Trader {
 protected:
   string traderName;
   int traderId;
-
+  char traderType;
 public:
   static int id;
   static int bidId;
@@ -98,7 +98,7 @@ public:
 
   void print();
 
-  void printBid();
+  void placeBid();
 
 private:
   string traderName;

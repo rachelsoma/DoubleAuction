@@ -17,15 +17,25 @@ Bid generateBid() {
   double price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
   price = floor(price*100+0.5)/100;
 
-cout << "generating bid\n";
+cout << "generating bid " << price << " " << quantity << endl;
 
 return Bid();
 };
 
 void Buyer::placeBid(){
-generateBid();
-bidType = 'a'; //a for asking
 
-cout << bidType <<". "<< price << ". "<< quantity << ". " <<endl;
+bidType = 'b'; //b for buying
 
+//generateBid();
+
+cout << traderName << "placed bid " << bidId <<" - " << /**price << " " << quantity << */endl;
 };
+//
+//void Seller::placeBid(){
+//
+//bidType = 'a'; //a for asking
+//
+//generateBid();
+//
+//cout << "Seller bid placed " << price << " " << quantity << endl;
+//};
