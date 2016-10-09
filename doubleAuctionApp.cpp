@@ -9,23 +9,21 @@ using namespace std;
 int main() {
   int numSellers = 2;
   int numBids = 5;
-  int numBuyers = 2;
 
-//  Seller sally("Sally"); //make seller object
+  Seller sally("Sally"); //make seller object
   Seller *bidArray[numSellers][numBids]; //make array
   Seller *arrPtr;
   for(int i=0; i < numSellers; i++) {//fill array with Bid objects that are returned from generateBid
-arrPtr = new Seller;
+    arrPtr = new Seller("Sally");
     for (int j=0; j<numBids; j++) {
 
-//      bidArray[i][j] = arrPtr;
       arrPtr->generateBid();
-     bidArray[i][j] = arrPtr;
-
+      bidArray[i][j] = arrPtr;
       arrPtr->print();
     }
 //    sally.print(bidArray[i]);
   }
+
   cout << "**********Print Array outside loop**********" << endl;
   for(int i=0; i < numSellers; i++) { //print sally array
     for(int j=0; j < numBids; j++) {
