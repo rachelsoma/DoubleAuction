@@ -102,7 +102,7 @@ public:
   virtual ~Seller() {};
 
   void print();
-
+  void print(Bid);
 
   Bid generateBid();
 

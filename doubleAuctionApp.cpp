@@ -7,18 +7,19 @@
 using namespace std;
 
 int main() {
-  int numBids = 5;
+  int numBids = 10;
   Seller sally("Sally");
 
-  for(int i=0; i < numBids; i++) {
-    Bid sallyBid[i] = sally.generateBid();
+  for(int i=1; i < numBids+1; i++) {
+    Bid sallyBid = sally.generateBid();
+     sally.print(sallyBid);
     //arrBids[i].print();
   }
-    cout << endl << endl;
+    cout << endl;
 
-  for(int i=0; i < numBids; i++) {
-    sally.print(sallyBid[i]);
-  }
+
+
+
 
 //  Buyer w("Joe");
 //  for (int i=0; i<5; i++) {
