@@ -15,9 +15,9 @@ char bidType;
 double price;
 int quantity;
 
-double const MINPRICE = 20;
-double const MAXPRICE = 100;
-int const QUANTITY = 1;
+//double const MINPRICE = 20;
+//double const MAXPRICE = 100;
+//int const QUANTITY = 1;
 
 public:
 

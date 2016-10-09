@@ -33,6 +33,7 @@ public:
   }
 
   void print();
+
   Bid generateBid();
 
 
@@ -40,8 +41,8 @@ public:
 
 };
 
-int Trader::id = 0;
-int Trader::_bidId = 0;
+int Trader::id = 1;
+int Trader::_bidId = 1;
 
 
 /**
@@ -70,7 +71,7 @@ public:
   virtual ~Buyer() {};
 
   void print();
-
+  void print(Bid);
   Bid generateBid();
 
 private:
