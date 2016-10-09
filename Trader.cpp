@@ -4,7 +4,7 @@ void Buyer::print() {
 };
 
 void Buyer::print(Bid) {
-  cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to buy " << quantity << " at "<< price <<endl;
+ // cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to buy " << quantity << " at "<< price <<endl;
 };
 
 void Seller::print() {
@@ -12,7 +12,7 @@ void Seller::print() {
 };
 
 void Seller::print(Bid) {
-   cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to sell " << quantity << " at "<< price <<endl;
+   //cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to sell " << quantity << " at "<< price <<endl;
 };
 
 Bid Trader::generateBid() {
