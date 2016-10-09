@@ -11,9 +11,13 @@ protected:
   string traderName;
   int traderId;
   char traderType;
+  int quantity;
+  double price;
+  int bidId;
+
 public:
   static int id;
-  static int bidId;
+  static int _bidId;
 
   /** Default constructor */
   Trader() {
@@ -37,7 +41,7 @@ public:
 };
 
 int Trader::id = 0;
-int Trader::bidId = 0;
+int Trader::_bidId = 0;
 
 
 /**
@@ -66,7 +70,7 @@ public:
   virtual ~Buyer() {};
 
   void print();
-  void placeBid();
+
   Bid generateBid();
 
 private:
@@ -98,6 +102,7 @@ public:
   virtual ~Seller() {};
 
   void print();
+
 
   Bid generateBid();
 
