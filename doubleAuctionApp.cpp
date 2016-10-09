@@ -8,25 +8,17 @@ using namespace std;
 
 int main() {
   int numBids = 5;
-  Seller arrBids[numBids];
+  Seller sally("Sally");
 
   for(int i=0; i < numBids; i++) {
-    Bid newBid = arrBids[i].generateBid();
+    Bid sallyBid[i] = sally.generateBid();
     //arrBids[i].print();
   }
     cout << endl << endl;
 
   for(int i=0; i < numBids; i++) {
-    arrBids[i].print();
+    sally.print(sallyBid[i]);
   }
-
-
-//
-//  for (int i = 0; i < numBids; i++)
-//    print(newBid)
-//    arrBids[i].print(newBid);
-
-  //  cout << print(arrBids[1]);
 
 //  Buyer w("Joe");
 //  for (int i=0; i<5; i++) {
