@@ -20,8 +20,11 @@ int quantity;
 //int const QUANTITY = 1;
 
 public:
-friend Auctioneer;
+
  Bid () {//constructor
+
+  };
+   Bid (int, int) {//constructor
 
   };
   void printBid();
@@ -30,7 +33,7 @@ protected:
 };
 
 void Bid::printBid() {
-  cout << "Bid is " << price <<endl;
+   cout << bidId <<". wants to buy " << quantity << " at "<< price <<endl;
 }
 
 #endif // BID_H

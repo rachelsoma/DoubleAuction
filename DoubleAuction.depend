@@ -1,25 +1,31 @@
 # depslib dependency file v1.0
-1476100373 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\doubleauctionapp.cpp
+1476145642 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\doubleauctionapp.cpp
 	<iostream>
 	<string>
 	"Bid.h"
 	"Trader.h"
 	"Trader.cpp"
+	"Auctioneer.h"
+	"Auctioneer.cpp"
 
-1476098977 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\bid.h
+1476144465 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\bid.h
 	<iostream>
 	<string>
 	<cstdlib>
 	<ctime>
 
-1476098977 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.h
+1476144211 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.h
 	<string>
 	<cmath>
 
-1476100535 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.cpp
+1476145200 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.cpp
 
-1476098977 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.cpp
+1476144779 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.cpp
 	"Auctioneer.h"
 
-1476098977 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.h
+1476144761 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.h
+	<iostream>
+
+1476144779 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.cpp
+	"Auctioneer.h"
 

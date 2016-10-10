@@ -11,14 +11,14 @@ protected:
   string traderName;
   int traderId;
   char traderType;
-  int quantity;
-  double price;
-  int bidId;
+  //int quantity;
+  //double price;
+  //int bidId;
 
 public:
   static int id;
   static int _bidId;
-  friend Auctioneer;
+
   /** Default constructor */
   Trader() {
     traderName="Unknown";

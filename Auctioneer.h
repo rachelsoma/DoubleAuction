@@ -1,6 +1,9 @@
 #ifndef AUCTIONEER_H
 #define AUCTIONEER_H
 
+#include<iostream>
+using namespace std;
+
 
 class Auctioneer
 {
@@ -9,7 +12,7 @@ class Auctioneer
     Auctioneer();
     /** Default destructor */
     ~Auctioneer();
-    void compareBids(Buyer, Seller);
+    //void compareBids(Buyer, Seller);
   protected:
 
   private:
