@@ -10,7 +10,7 @@ int main() {
   int numSellers = 2;
   int numBids = 5;
 
-  Seller sally("Sally"); //make seller object
+ // Seller sally("Sally"); //make seller object
   Seller *bidArray[numSellers][numBids]; //make array
   Seller *arrPtr;
   for(int i=0; i < numSellers; i++) {//fill array with Bid objects that are returned from generateBid
