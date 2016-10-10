@@ -18,7 +18,7 @@ protected:
 public:
   static int id;
   static int _bidId;
-
+  friend Auctioneer;
   /** Default constructor */
   Trader() {
     traderName="Unknown";

@@ -9,7 +9,7 @@ class Auctioneer
     Auctioneer();
     /** Default destructor */
     ~Auctioneer();
-
+    void compareBids(Buyer, Seller);
   protected:
 
   private:

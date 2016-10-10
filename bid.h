@@ -20,7 +20,7 @@ int quantity;
 //int const QUANTITY = 1;
 
 public:
-
+friend Auctioneer;
  Bid () {//constructor
 
   };
