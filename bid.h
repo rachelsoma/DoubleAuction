@@ -4,7 +4,6 @@
 #include <fstream>
 #include<string>
 #include<cstdlib>
-#include<ctime>
 
 using namespace std;
 ofstream myfile;

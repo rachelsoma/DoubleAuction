@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<ctime>
 
 using namespace std;
 
@@ -9,7 +10,7 @@ using namespace std;
 #include "Auctioneer.h"
 
 int main() {
-
+srand(time(NULL));
 
   Trader s;
   Bid t1 = s.generateBid();

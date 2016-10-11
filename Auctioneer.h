@@ -53,6 +53,9 @@ void Auctioneer::compareBids() {
         buyers[j].printBid();
         clearingPrice = (sellers[i].getPrice() + buyers[j].getPrice()) /2;
         cout << "Clearing price: " << clearingPrice << endl;
+
+
+
       } else {
         sellers[i].printBid();
         cout << "/ ";
@@ -72,12 +75,10 @@ void Auctioneer::printBids() {
   }
 }
 
-void Auctioneer::writeToFile(){
-
-
+void Auctioneer::writeToFile() {
 
   myfile.open ("doubleAuctionOutput.txt");
-    for ( int i=0; i<sellers.size(); ++i ) {
+  for ( int i=0; i<sellers.size(); ++i ) {
     for (int j=0; j<sellers.size(); ++j) {
       if( sellers[i].getPrice() < buyers[j].getPrice() ) {
         sellers[i].printBidToFile();
