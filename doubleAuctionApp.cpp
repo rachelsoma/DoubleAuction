@@ -1,42 +1,21 @@
 #include<iostream>
 #include<string>
 #include<vector>
-#include "Bid.h"
-#include "Trader.h"
-#include "Trader.cpp"
-#include "Auctioneer.h"
-#include "Auctioneer.cpp"
 
 using namespace std;
 
+#include "Bid.h"
+#include "Trader.h"
+#include "Auctioneer.h"
+
 int main() {
 
-//Trader s;
-//Bid t1 = s.generateBid();
 
-int numBids = 5;
+  Trader s;
+  Bid t1 = s.generateBid();
 
-vector<Bid> sellers;
-for (int i = 0; i <numBids; i++){
-Seller j("Joe");
-Bid s1 = j.generateBid();
-sellers.push_back(s1);
-}
-
-vector<Bid> buyers;
-for (int i = 0; i <numBids; i++){
-Buyer k("Kate");
-Bid b1=k.generateBid();
-buyers.push_back(b1);
-}
-
-
-//for (int i = 0; i<sellers.size();i++){
-//sellers[i].printBid();
-//buyers[i].printBid();
-//}
-
-Auctioneer a;
-a.compareBids(buyers,sellers);
+  Auctioneer a;
+  a.compareBids();
+  a.writeToFile();
   return 0;
 }

@@ -1,21 +1,20 @@
 # depslib dependency file v1.0
-1476155160 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\doubleauctionapp.cpp
+1476171602 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\doubleauctionapp.cpp
 	<iostream>
 	<string>
 	<vector>
 	"Bid.h"
 	"Trader.h"
-	"Trader.cpp"
 	"Auctioneer.h"
-	"Auctioneer.cpp"
 
-1476155922 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\bid.h
+1476171572 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\bid.h
 	<iostream>
+	<fstream>
 	<string>
 	<cstdlib>
 	<ctime>
 
-1476154624 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.h
+1476171477 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\trader.h
 	<string>
 	<cmath>
 
@@ -24,9 +23,10 @@
 1476155898 source:c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.cpp
 	"Auctioneer.h"
 
-1476156066 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.h
+1476171710 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.h
 	<iostream>
 	<vector>
+	<fstream>
 
 1476155928 c:\users\rache_000\uni\oop\workspace\codeblocks\doubleauction\auctioneer.cpp
 	"Auctioneer.h"

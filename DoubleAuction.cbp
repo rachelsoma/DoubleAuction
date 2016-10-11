@@ -31,11 +31,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Auctioneer.cpp" />
 		<Unit filename="Auctioneer.h" />
-		<Unit filename="Trader.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Unit filename="Trader.h" />
 		<Unit filename="bid.h" />
 		<Unit filename="doubleAuctionApp.cpp" />
