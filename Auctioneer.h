@@ -14,7 +14,7 @@ class Auctioneer
     Auctioneer();
     /** Default destructor */
     ~Auctioneer();
-    void compareBids(vector<Bid>,vector<Bid>);
+    void compareBids(vector,vector);
   protected:
 
   private:
