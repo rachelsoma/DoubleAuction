@@ -11,9 +11,19 @@ using namespace std;
 int main() {
 
 Trader s;
-s.generateBid().printBid();
+Bid t1 = s.generateBid();
 
-Trader j("Joe");
-j.generateBid().printBid();
+Seller j("Joe");
+Bid s1 = j.generateBid();
+
+Buyer k("Kate");
+Bid b1=k.generateBid();
+
+
+
+t1.printBid();
+s1.printBid();
+b1.printBid();
+
   return 0;
 }

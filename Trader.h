@@ -31,7 +31,7 @@ public:
   }
 
   void print();
-
+  double randPrice();
   Bid generateBid();
 //    virtual ~Trader();
 

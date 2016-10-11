@@ -28,7 +28,7 @@ public:
 };
 
 void Bid::printBid() {
-  cout << "printBid: " << traderName << "\t" << bidId <<"\t " << quantity << " \t "<< price <<endl;
+  cout << "printBid: " << traderName << "\t" << bidId <<"\t " << quantity << " \t "<< price << "\t" << bidType << endl;
 }
 
 #endif // BID_H
