@@ -14,20 +14,20 @@ protected:
   char bidType;
 
 public:
-  static int id;
+  static int _traderId;
   static int _bidId;
 
   /** Default constructor */
   Trader() {
     traderName="Unknown";
-    traderId = id;
-    id++;
+    traderId = _traderId;
+    _traderId++;
   }
   /** Name only constructor */
   Trader(string inTrader) {
     traderName=inTrader;
-    traderId = id;
-    id++;
+    traderId = _traderId;
+    _traderId++;
   }
 
   void print();
@@ -37,7 +37,7 @@ public:
 
 };
 
-int Trader::id = 1;
+int Trader::_traderId = 1;
 int Trader::_bidId = 1;
 
 
@@ -52,13 +52,15 @@ public:
   Buyer() {
     traderName="Unknown";
     traderType='b';
-    traderId = id;
+    traderId = _traderId;
+    _traderId++;
   }
   /** Name only constructor */
   Buyer (string inTrader) {
     traderName=inTrader;
     traderType='b';
-    traderId = id;
+    traderId = _traderId;
+    _traderId++;
   }
 
   /** Default destructor */
@@ -83,13 +85,15 @@ public:
   Seller() {
     traderName="Unknown";
     traderType='s';
-    traderId = id;
+    traderId = _traderId;
+    _traderId++;
   }
   /** Name only constructor */
   Seller (string inTrader) {
     traderName=inTrader;
     traderType='s';
-    traderId = id;
+    traderId = _traderId;
+    _traderId++;
   }
 
   /** Default destructor */

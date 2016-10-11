@@ -2,6 +2,8 @@
 #define AUCTIONEER_H
 
 #include<iostream>
+#include<vector>
+
 using namespace std;
 
 
@@ -12,7 +14,7 @@ class Auctioneer
     Auctioneer();
     /** Default destructor */
     ~Auctioneer();
-    //void compareBids(Buyer, Seller);
+    void compareBids(vector<Bid>,vector<Bid>);
   protected:
 
   private:

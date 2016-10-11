@@ -24,7 +24,9 @@ Bid Trader::generateBid() {
   int quantity = QUANTITY;
   double price = randPrice();
   bidType = 'u'; //u for unknown
-  Bid t(traderName,_bidId, bidType, price, quantity);
+  int bidId = _bidId;
+  Bid t(traderName,bidId, bidType, price, quantity);
+  _bidId++;
   return t;
 };
 
@@ -32,7 +34,9 @@ Bid Seller::generateBid(){
 int quantity = QUANTITY;
 double price =randPrice();
 bidType = 's'; //s for sell
-Bid s(traderName,_bidId, bidType, price, quantity);
+int bidId = _bidId;
+Bid s(traderName,bidId, bidType, price, quantity);
+_bidId++;
 return s;
 };
 
@@ -40,7 +44,9 @@ Bid Buyer::generateBid(){
 int quantity = QUANTITY;
 double price=randPrice();
 bidType = 'b'; //b for buy
-Bid b(traderName,_bidId, bidType, price, quantity);
+int bidId = _bidId;
+Bid b(traderName,bidId, bidType, price, quantity);
+_bidId++;
 return b;
 }
 
