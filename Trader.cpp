@@ -1,8 +1,12 @@
-void Buyer::print() {
+  double const MINPRICE = 20;
+  double const MAXPRICE = 100;
+  int const QUANTITY = 1;
+
+void Trader::print() {
   cout << "Trader ID:" << traderId << " Name:"<< traderName <<"."<<endl;
 };
 
-void Buyer::print(Bid) {
+void Buyer::print() {
   cout << "Buyer ID:" << traderId << " Name:"<< traderName <<" Type: " << traderType <<endl;
 };
 
@@ -10,58 +14,13 @@ void Seller::print() {
   cout << "Seller ID:" << traderId << " Name:"<< traderName <<" Type: " << traderType <<endl;
 };
 
-void Seller::print(Bid) {
-//   cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to sell " << quantity << " at "<< price <<endl;
-};
 
-//Bid Trader::generateBid() {
-//  double const MINPRICE = 20;
-//  double const MAXPRICE = 100;
-//  int const QUANTITY = 1;
-//  int quantity = QUANTITY;
-//  int price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
-//  price = floor(price*100+0.5)/100;
-//  Bid t();
-//  return t;
-//};
-
-Bid Buyer::generateBid() {
-  double const MINPRICE = 20;
-  double const MAXPRICE = 100;
-  int const QUANTITY = 1;
+Bid Trader::generateBid() {
   int quantity = QUANTITY;
-  traderName;
-  traderId;
-  traderType;
-  int bidId=_bidId;
-  bidType = 'b'; //b for buying
-
-  double price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
+  int price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
   price = floor(price*100+0.5)/100;
-
-  _bidId++;
-  Bid b(traderName, bidId, bidType, price, quantity);
-  return b;
-//cout << "Trader ID:" << traderId << " placed Bid "<< bidId <<". wants to buy " << quantity << " at "<< price <<endl;
-  return Bid();
+  bidType = 'u'; //u for unknown
+  Bid t(traderName,_bidId, bidType, price, quantity);
+  return t;
 };
 
-Bid Seller::generateBid() {
-  double const MINPRICE = 20;
-  double const MAXPRICE = 100;
-  int const QUANTITY = 1;
-  int quantity = QUANTITY;
-  traderName;
-  traderId;
-  traderType;
-  int bidId = _bidId;
-  bidType = 's'; //b for buying
-
-  double price = MAXPRICE * ((rand() + 1) / double(RAND_MAX + 2)) + MINPRICE;
-  price = floor(price*100+0.5)/100;
-
-  _bidId++;
-  Bid b(traderName, bidId, bidType, price, quantity);
-  cout << "Bid generated \n";
-  return b;
-};

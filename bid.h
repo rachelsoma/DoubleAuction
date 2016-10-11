@@ -16,22 +16,19 @@ private:
   int quantity;
 
 public:
-  Bid(){};
   Bid (string traderName, int bidId, char bidType, double price, int quantity) {//constructor
-    this->traderName;
-    this->bidId;
-    this->bidType;
-    this->price;
-    this->quantity;
+    this->traderName=traderName;
+    this->bidId=bidId;
+    this->bidType=bidType;
+    this->price=price;
+    this->quantity=quantity;
   };
 
   void printBid();
-
-protected:
 };
 
 void Bid::printBid() {
-  cout << traderName << "/t" << bidId <<"/t " << quantity << " /t "<< price <<endl;
+  cout << "printBid: " << traderName << "\t" << bidId <<"\t " << quantity << " \t "<< price <<endl;
 }
 
 #endif // BID_H

@@ -10,9 +10,10 @@ using namespace std;
 
 int main() {
 
-Seller s;
-s.print();
-s.generateBid();
+Trader s;
+s.generateBid().printBid();
 
+Trader j("Joe");
+j.generateBid().printBid();
   return 0;
 }

@@ -11,9 +11,7 @@ protected:
   string traderName;
   int traderId;
   char traderType;
-  //int quantity;
-  //double price;
-  //int bidId;
+  char bidType;
 
 public:
   static int id;
@@ -34,9 +32,7 @@ public:
 
   void print();
 
-//  Bid generateBid();
-
-
+  Bid generateBid();
 //    virtual ~Trader();
 
 };
@@ -69,7 +65,6 @@ public:
   virtual ~Buyer() {};
 
   void print();
-  void print(Bid);
   Bid generateBid();
 
 private:
