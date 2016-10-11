@@ -16,7 +16,10 @@ srand(time(NULL));
   Bid t1 = s.generateBid();
 
   Auctioneer a;
+  a.collectBids();
   a.compareBids();
-  a.writeToFile();
+cout << "compare again" << endl;
+  a.compareBids();
+  //a.writeToFile();
   return 0;
 }

@@ -31,6 +31,7 @@ public:
 
   void print();
   double randPrice();
+  randQuantity();
   Bid generateBid();
 //    virtual ~Trader();
 
@@ -113,7 +114,8 @@ private:
 
 double const MINPRICE = 20;
 double const MAXPRICE = 100;
-int const QUANTITY = 1;
+int const MAXQUANTITY = 10;
+int const MINQUANTITY = 1;
 
 
 void Trader::print() {
@@ -134,8 +136,13 @@ double Trader::randPrice() {
   return price;
 };
 
+int Trader::randQuantity(){
+int quantity = MINQUANTITY + rand() % MAXQUANTITY;
+return quantity;
+};
+
 Bid Trader::generateBid() {
-  int quantity = QUANTITY;
+  int quantity = randQuantity();
   double price = randPrice();
   bidType = 'u'; //u for unknown
   int bidId = _bidId;
@@ -145,21 +152,21 @@ Bid Trader::generateBid() {
 };
 
 Bid Seller::generateBid() {
-  int quantity = QUANTITY;
+  int quantity = randQuantity();
   double price =randPrice();
   bidType = 's'; //s for sell
   int bidId = _bidId;
-  Bid s(traderName,bidId, bidType, price, quantity);
+  Bid s(traderName,bidId,bidType,price,quantity);
   _bidId++;
   return s;
 };
 
 Bid Buyer::generateBid() {
-  int quantity = QUANTITY;
+  int quantity = randQuantity();
   double price=randPrice();
   bidType = 'b'; //b for buy
   int bidId = _bidId;
-  Bid b(traderName,bidId, bidType, price, quantity);
+  Bid b(traderName,bidId,bidType,price,quantity);
   _bidId++;
   return b;
 }

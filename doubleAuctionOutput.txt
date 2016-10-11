@@ -1,25 +1,25 @@
-Joe, 2, s, 64.89, 1 / Kate, 7, b, 66.43, 1 Clearing price: 65.66
-Joe, 2, s, 64.89, 1 / Kate, 8, b, 86.36, 1 Clearing price: 75.625
-Joe, 2, s, 64.89, 1 / Kate, 9, b, 23.57, 1 No Match
-Joe, 2, s, 64.89, 1 / Kate, 10, b, 72.48, 1 Clearing price: 68.685
-Joe, 2, s, 64.89, 1 / Kate, 11, b, 39.62, 1 No Match
-Joe, 3, s, 87.31, 1 / Kate, 7, b, 66.43, 1 No Match
-Joe, 3, s, 87.31, 1 / Kate, 8, b, 86.36, 1 No Match
-Joe, 3, s, 87.31, 1 / Kate, 9, b, 23.57, 1 No Match
-Joe, 3, s, 87.31, 1 / Kate, 10, b, 72.48, 1 No Match
-Joe, 3, s, 87.31, 1 / Kate, 11, b, 39.62, 1 No Match
-Joe, 4, s, 79.44, 1 / Kate, 7, b, 66.43, 1 No Match
-Joe, 4, s, 79.44, 1 / Kate, 8, b, 86.36, 1 Clearing price: 82.9
-Joe, 4, s, 79.44, 1 / Kate, 9, b, 23.57, 1 No Match
-Joe, 4, s, 79.44, 1 / Kate, 10, b, 72.48, 1 No Match
-Joe, 4, s, 79.44, 1 / Kate, 11, b, 39.62, 1 No Match
-Joe, 5, s, 35.57, 1 / Kate, 7, b, 66.43, 1 Clearing price: 51
-Joe, 5, s, 35.57, 1 / Kate, 8, b, 86.36, 1 Clearing price: 60.965
-Joe, 5, s, 35.57, 1 / Kate, 9, b, 23.57, 1 No Match
-Joe, 5, s, 35.57, 1 / Kate, 10, b, 72.48, 1 Clearing price: 54.025
-Joe, 5, s, 35.57, 1 / Kate, 11, b, 39.62, 1 Clearing price: 37.595
-Joe, 6, s, 87.61, 1 / Kate, 7, b, 66.43, 1 No Match
-Joe, 6, s, 87.61, 1 / Kate, 8, b, 86.36, 1 No Match
-Joe, 6, s, 87.61, 1 / Kate, 9, b, 23.57, 1 No Match
-Joe, 6, s, 87.61, 1 / Kate, 10, b, 72.48, 1 No Match
-Joe, 6, s, 87.61, 1 / Kate, 11, b, 39.62, 1 No Match
+Joe, 2, s, 73.68, 8 / Kate, 7, b, 53.4, 10 No Match
+Joe, 2, s, 73.68, 8 / Kate, 8, b, 80.23, 3 Clearing price: 76.955
+Joe, 2, s, 73.68, 8 / Kate, 9, b, 60.29, 5 No Match
+Joe, 2, s, 73.68, 8 / Kate, 10, b, 76.24, 10 Clearing price: 74.96
+Joe, 2, s, 73.68, 8 / Kate, 11, b, 117.98, 5 Clearing price: 95.83
+Joe, 3, s, 66.01, 1 / Kate, 7, b, 53.4, 10 No Match
+Joe, 3, s, 66.01, 1 / Kate, 8, b, 80.23, 3 Clearing price: 73.12
+Joe, 3, s, 66.01, 1 / Kate, 9, b, 60.29, 5 No Match
+Joe, 3, s, 66.01, 1 / Kate, 10, b, 76.24, 10 Clearing price: 71.125
+Joe, 3, s, 66.01, 1 / Kate, 11, b, 117.98, 5 Clearing price: 91.995
+Joe, 4, s, 101.83, 2 / Kate, 7, b, 53.4, 10 No Match
+Joe, 4, s, 101.83, 2 / Kate, 8, b, 80.23, 3 No Match
+Joe, 4, s, 101.83, 2 / Kate, 9, b, 60.29, 5 No Match
+Joe, 4, s, 101.83, 2 / Kate, 10, b, 76.24, 10 No Match
+Joe, 4, s, 101.83, 2 / Kate, 11, b, 117.98, 5 Clearing price: 109.905
+Joe, 5, s, 38.32, 7 / Kate, 7, b, 53.4, 10 Clearing price: 45.86
+Joe, 5, s, 38.32, 7 / Kate, 8, b, 80.23, 3 Clearing price: 59.275
+Joe, 5, s, 38.32, 7 / Kate, 9, b, 60.29, 5 Clearing price: 49.305
+Joe, 5, s, 38.32, 7 / Kate, 10, b, 76.24, 10 Clearing price: 57.28
+Joe, 5, s, 38.32, 7 / Kate, 11, b, 117.98, 5 Clearing price: 78.15
+Joe, 6, s, 30.11, 4 / Kate, 7, b, 53.4, 10 Clearing price: 41.755
+Joe, 6, s, 30.11, 4 / Kate, 8, b, 80.23, 3 Clearing price: 55.17
+Joe, 6, s, 30.11, 4 / Kate, 9, b, 60.29, 5 Clearing price: 45.2
+Joe, 6, s, 30.11, 4 / Kate, 10, b, 76.24, 10 Clearing price: 53.175
+Joe, 6, s, 30.11, 4 / Kate, 11, b, 117.98, 5 Clearing price: 74.045

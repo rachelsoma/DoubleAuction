@@ -31,6 +31,7 @@ public:
   string getName();
   int getBidId();
   int getQuantity();
+  int setQuantity(int, int);
 };
 
 void Bid::printBid() {
@@ -53,8 +54,14 @@ int Bid:: getBidId() {
   return bidId;
 }
 
+int Bid::setQuantity(int sellQuantity, int buyQuantity){
+int quantity = sellQuantity - buyQuantity;
+return quantity;
+}
+
 int Bid::getQuantity() {
   return quantity;
 }
+
 
 #endif // BID_H
