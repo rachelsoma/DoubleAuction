@@ -34,7 +34,7 @@ public:
 
   void print();
 
-  Bid generateBid();
+//  Bid generateBid();
 
 
 //    virtual ~Trader();
@@ -57,14 +57,12 @@ public:
     traderName="Unknown";
     traderType='b';
     traderId = id;
-
   }
   /** Name only constructor */
   Buyer (string inTrader) {
     traderName=inTrader;
     traderType='b';
     traderId = id;
-
   }
 
   /** Default destructor */

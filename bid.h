@@ -9,31 +9,29 @@ using namespace std;
 
 class Bid {
 private:
-string traderName;
-int bidId;
-char bidType;
-double price;
-int quantity;
-
-//double const MINPRICE = 20;
-//double const MAXPRICE = 100;
-//int const QUANTITY = 1;
+  string traderName;
+  int bidId;
+  char bidType;
+  double price;
+  int quantity;
 
 public:
-
- Bid () {//constructor
-
+  Bid(){};
+  Bid (string traderName, int bidId, char bidType, double price, int quantity) {//constructor
+    this->traderName;
+    this->bidId;
+    this->bidType;
+    this->price;
+    this->quantity;
   };
-   Bid (int, int) {//constructor
 
-  };
   void printBid();
 
 protected:
 };
 
 void Bid::printBid() {
-   cout << bidId <<". wants to buy " << quantity << " at "<< price <<endl;
+  cout << traderName << "/t" << bidId <<"/t " << quantity << " /t "<< price <<endl;
 }
 
 #endif // BID_H
